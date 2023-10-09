@@ -2,12 +2,22 @@ package main
 
 import (
 	"fmt"
-	"strings"
+	"math/rand"
+	"time"
 )
 
-func main() {
-	HotSpurs := "hm ? j madi?"
-	replacePlayer := strings.NewReplacer("?", "son")
-	player := replacePlayer.Replace(HotSpurs)
-	fmt.Println(player)
-}
+	for i := 0; i < 10; i++{
+		fmt.Println("You have",10-1 "chances~")
+		fmt.Print("Input guess number :")
+		inputNumverString, err := reader.ReadString('\n')
+		if err != nil{
+			log.Fatal(err)
+		}
+		if inputNumber == answer{
+			fmt.Println("Great! U got number. congratulations~")
+		}else if inputNumber > answer{
+			fmt.Println("Great! U got number. congratulations~")
+		}else if inputNumber < answer{
+			fmt.Println("Great! U got number. congratulations~")
+		}
+	}
