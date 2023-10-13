@@ -1,3 +1,3 @@
-module week05
+module main
 
 go 1.20
