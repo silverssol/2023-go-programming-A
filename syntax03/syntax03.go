@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"log" //Fatal function 합수  err메세지 출력 후 프로그램 종료
+	"log" //Fatal function 합수  err 발생시 err메세지 출력 후 프로그램 종료
 	"os"
 	"strconv"
 	"strings"
@@ -19,12 +19,13 @@ func main() {
 	}
 
 	in = strings.TrimSpace(in)
-	dan, err := strconv.ParseInt(in, 10, 32)
+	dan, err := strconv.ParseInt(in, 10, 16)
 	if err != nil {
 		log.Fatal(err)
 	}
 	for i := 1; i < 10; i++ {
-		fmt.Println(dan, " * ", i, " = ", (dan * i))
+		a := int(dan) * i
+		fmt.Printf("%d * %d = %d\n", dan, i, a)
 	}
 	fmt.Println(dan * 2)
 }

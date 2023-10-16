@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
-	"math"
+	"fmt"  //출력함수를 포함하는 패키지
+	"math" //수학함수
 	"strings"
 )
 
@@ -13,7 +13,8 @@ func main() {
 	//var a = 7
 	//a := 7
 	a := 7
-	var b float64 = 5.3
+	// var b float64 = 5.3
+	b := 5.3
 	a = int(b) //Type Conversion, Casting
 	d := false
 
