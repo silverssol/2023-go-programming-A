@@ -6,9 +6,9 @@ import (
 	"os"
 )
 
-func isPrime(n int) (bool, error) {
+func isPrime(n int) (bool, error) { //사용자 지정 함수로 형을 마지막에 써주고 반환값도 마지막에 써줌
 	if n < 2 {
-		return false, fmt.Errorf("%d 는(은) 소수가 아닙니다~", n)
+		return false, fmt.Errorf("%d 는(은) 소수가 아닙니다~", n) //n이 2가 아닐 때 false로 return하고 errorf함수로 err발생시 출력할 문구 출력
 	}
 
 	for i := 2; i < n; i++ {
@@ -24,13 +24,13 @@ func prime(number int) {
 	p, err := isPrime(number)
 	if err != nil {
 		fmt.Println(err)
-		os.Exit(0)
+		os.Exit(0) //그냥 종료
 	}
 
 	if p {
-		fmt.Println(number, "는(은) 소수입니다!")
+		fmt.Println(number, "는(은) 소수입니다!") //err가 아닐시 소수면 출력
 	} else {
-		fmt.Println(number, "는(은) 소수가 아닙니다~")
+		fmt.Println(number, "는(은) 소수가 아닙니다~") //err가 아닐 시 소수가 아니면 출력
 	}
 }
 
