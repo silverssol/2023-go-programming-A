@@ -21,4 +21,16 @@ func main() {
 		fmt.Println(primes[i])
 		i++
 	}
+
+	// for j := 0; j < len(primes); i++ {
+	// 	fmt.Println(primes[i])
+	// }
+
+	// for idx, prime := range primes {//컴파일에러, idx 사용해야함
+	// 	fmt.Println(idx, prime)
+	// }
+
+	for prime := range primes { //갑산 출력하려 했으나 인덱스가 출력됨
+		fmt.Println(prime)
+	}
 }
