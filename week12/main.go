@@ -16,5 +16,8 @@ func main() {
 	for _, value := range s {
 		fmt.Println(value)
 	}
-
+	copys := s[1:4]
+	for _, value := range copys {
+		fmt.Println(value)
+	}
 }
