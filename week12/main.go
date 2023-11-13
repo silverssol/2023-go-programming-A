@@ -10,8 +10,11 @@ func main() {
 	as := a[0:2]
 	as[1] = "z"
 	// c := append(a, "y")
-	c := append(a, "y", "x")
+	c := append(a, "y", "x", "q", "w") //capacity가 바뀐다 5-> 10
 
 	fmt.Println(a, len(a), cap(a))
 	fmt.Println(c, len(c), cap(c))
+	fmt.Print("%x %x %x\n", &a[0], &as[0], &c[0])
+	c[0] = "k"
+	fmt.Println(a, c)
 }
