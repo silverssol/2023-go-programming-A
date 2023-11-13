@@ -21,6 +21,11 @@ func main() {
 		fmt.Println(value)
 	}
 	test := [3]string{"inha", "go", "student"} //배열 리터럴을 이용해서 test배열 생성
-	tests := test[0:2]
-	fmt.Println(len(tests))
+	//tests:=test[0:4]							//invalid argument: index 4 out of bounds [0:4]
+	tests := test[:2] //tests := test[0:2]
+	tests2 := test[1:]
+	tests2[0] = "python"
+	fmt.Println(tests2)
+	fmt.Println(tests, len(tests))
+	fmt.Println(test)
 }
