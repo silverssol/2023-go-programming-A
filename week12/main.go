@@ -20,4 +20,7 @@ func main() {
 	for _, value := range copys {
 		fmt.Println(value)
 	}
+	test := [3]string{"inha", "go", "student"} //배열 리터럴을 이용해서 test배열 생성
+	tests := test[0:2]
+	fmt.Println(len(tests))
 }
